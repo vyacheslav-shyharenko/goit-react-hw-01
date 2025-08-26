@@ -1,5 +1,4 @@
 import styles from "./ProfileBio.module.css";
-console.log("🚀 ~ styles:", styles);
 
 const ProfileBio = ({ avatar, tag, location, username }) => {
   return (

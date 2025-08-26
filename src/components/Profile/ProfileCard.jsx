@@ -1,6 +1,6 @@
 import ProfileBio from "./ProfileBio/ProfileBio";
 import ProfileStats from "./ProfileStats/ProfileStats";
-import styles from "./Profile.module.css";
+import styles from "./ProfileCard.module.css";
 
 const Profile = ({
   username,

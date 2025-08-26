@@ -1,11 +1,17 @@
-import Profile from "./components/Profile/Profile";
+import FriendList from "./components/FriendList/FriendList";
+import ProfileCard from "./components/Profile/ProfileCard";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
-import UserData from "./userData.json";
+import userData from "./userData.json";
+import friendsData from "./friends.json";
+import transactions from "./transactions.json";
 
 function App() {
   return (
     <>
-      <Profile {...UserData} />
+      <ProfileCard {...userData} />
+      <FriendList dataFriends={friendsData} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }

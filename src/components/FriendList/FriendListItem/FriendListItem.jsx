@@ -2,7 +2,11 @@ import styles from "./FriendListItem.module.css";
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li className={styles.friendListItem}>
+    <li
+      className={`${styles.friendListItem} ${
+        isOnline ? styles.friendListItemOn : styles.friendListItemOff
+      }`}
+    >
       <img
         className={styles.friendImage}
         src={avatar}

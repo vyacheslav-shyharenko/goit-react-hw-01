@@ -1,0 +1,20 @@
+.profileBio {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.716);
+
+  & .profileAvatar {
+    width: 120px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  & .profileName {
+    font-size: 25px;
+  }
+
+  & .profileTag,
+  .profileLocation {
+    color: rgb(188, 188, 188);
+  }
+}

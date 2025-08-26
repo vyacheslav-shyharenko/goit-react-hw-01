@@ -1,0 +1,9 @@
+.profileStatsList {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
+  & .profileStatsItem {
+    border-left: 1px solid white;
+  }
+}

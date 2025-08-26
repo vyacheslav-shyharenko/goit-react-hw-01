@@ -4,6 +4,28 @@
   justify-content: space-between;
 
   & .profileStatsItem {
-    border-left: 1px solid white;
+    max-width: 100%;
+    padding: 10px;
+    position: relative;
+
+    &:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7%;
+      width: 2px;
+      height: 85%;
+      background-color: #d0d3d5;
+    }
+
+    &:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 7%;
+      width: 2px;
+      height: 85%;
+      background-color: #d0d3d5;
+    }
   }
 }
